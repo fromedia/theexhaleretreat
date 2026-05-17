@@ -1,0 +1,8 @@
+file 'video-clips/woman-nature.mp4'
+file 'video-clips/woman-meditating.mp4'
+file 'video-clips/woman-waterfall.mp4'
+file 'video-clips/woman-lakeside.mp4'
+file 'video-clips/mountain-view.mp4'
+file 'video-clips/woman-woods.mp4'
+file 'video-clips/woman-spa.mp4'
+file 'video-clips/group-meditating.mp4'
