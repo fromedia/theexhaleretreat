@@ -1,1 +1,475 @@
-<!DOCTYPE html><html><head><title>The Exhale Retreat</title></head><body><h1>Coming Soon</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Exhale Retreat | A Curated Wellness Journey for Solo Women Travelers</title>
+    <meta name="description" content="A 6-day healing retreat for solo women travelers. Find safety, sisterhood, and transformation in the Texas Hill Country.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(180deg, #1a2f1a 0%, #0d1a0d 100%);
+            color: #f5f0e8;
+            line-height: 1.7;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(26, 47, 26, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 16px 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(124, 154, 109, 0.2);
+        }
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-mark {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        .logo-icon {
+            background: linear-gradient(135deg, #7c9a6d, #c4b49a);
+            color: #fff;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .logo-icon svg { width: 22px; height: 22px; stroke: #fff; fill: none; stroke-width: 2; }
+        .logo-text { display: flex; flex-direction: column; }
+        .logo-top { font-size: 0.95rem; font-weight: 600; color: #fff; letter-spacing: 0.15em; line-height: 1.1; }
+        .logo-bottom { font-size: 0.65rem; font-weight: 500; color: #c4b49a; letter-spacing: 0.2em; text-transform: uppercase; }
+        
+        /* Hero Section */
+        .hero {
+            padding: 120px 0 80px;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(26, 47, 26, 0.9) 0%, rgba(13, 26, 13, 0.95) 100%),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="%237c9a6d" stroke-width="0.5" opacity="0.1"/></svg>');
+            background-size: cover, 200px;
+        }
+        .eyebrow {
+            font-size: 0.85rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: #c4b49a;
+            margin-bottom: 24px;
+        }
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 400;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            color: #fff;
+        }
+        h1 .highlight { color: #7c9a6d; font-style: italic; }
+        .hero-subheadline {
+            font-size: 1.25rem;
+            color: #c4b49a;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            font-weight: 300;
+        }
+        .video-placeholder {
+            background: rgba(124, 154, 109, 0.1);
+            border: 2px dashed rgba(124, 154, 109, 0.3);
+            border-radius: 12px;
+            padding: 80px 40px;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: #7c9a6d;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #7c9a6d, #6b8a5d);
+            color: #fff;
+            padding: 20px 48px;
+            font-size: 1.1rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(124, 154, 109, 0.3);
+        }
+        
+        /* Problem Section */
+        .problem {
+            padding: 100px 0;
+            background: #0d1a0d;
+        }
+        .section-label {
+            font-size: 0.75rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: #7c9a6d;
+            margin-bottom: 16px;
+        }
+        h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 400;
+            margin-bottom: 40px;
+            color: #fff;
+        }
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+        .problem-card {
+            background: rgba(124, 154, 109, 0.05);
+            border-left: 3px solid #7c9a6d;
+            padding: 32px;
+        }
+        .problem-card h3 {
+            color: #c4b49a;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            font-weight: 400;
+        }
+        .problem-card p { color: #a0a090; }
+        
+        /* Solution Section */
+        .solution {
+            padding: 100px 0;
+            background: linear-gradient(180deg, #0d1a0d 0%, #1a2f1a 100%);
+        }
+        .solution-intro {
+            font-size: 1.35rem;
+            color: #c4b49a;
+            max-width: 700px;
+            margin-bottom: 60px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+        .feature {
+            text-align: center;
+            padding: 40px 24px;
+        }
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            background: rgba(124, 154, 109, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 1.5rem;
+        }
+        .feature h3 {
+            color: #fff;
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            font-weight: 400;
+        }
+        .feature p { color: #a0a090; }
+        
+        /* Retreat Details */
+        .details {
+            padding: 100px 0;
+            background: #0d1a0d;
+        }
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+        .detail-block h3 {
+            color: #c4b49a;
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        .detail-list {
+            list-style: none;
+        }
+        .detail-list li {
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(124, 154, 109, 0.2);
+            color: #f5f0e8;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .detail-list li::before {
+            content: "~";
+            color: #7c9a6d;
+            font-weight: bold;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 100px 0;
+            background: linear-gradient(180deg, #1a2f1a 0%, #0d1a0d 100%);
+            text-align: center;
+        }
+        .testimonial {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 48px;
+            background: rgba(124, 154, 109, 0.05);
+            border-radius: 8px;
+        }
+        .testimonial-quote {
+            font-size: 1.35rem;
+            font-style: italic;
+            color: #f5f0e8;
+            margin-bottom: 24px;
+            line-height: 1.8;
+        }
+        .testimonial-author {
+            color: #c4b49a;
+            font-size: 0.95rem;
+        }
+        
+        /* Offer Section */
+        .offer {
+            padding: 100px 0;
+            background: #0d1a0d;
+            text-align: center;
+        }
+        .price {
+            font-size: 3.5rem;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        .price-note {
+            color: #c4b49a;
+            margin-bottom: 40px;
+        }
+        .includes {
+            max-width: 500px;
+            margin: 0 auto 40px;
+            text-align: left;
+        }
+        .includes h4 {
+            color: #7c9a6d;
+            margin-bottom: 16px;
+            font-weight: 400;
+        }
+        .includes ul {
+            list-style: none;
+        }
+        .includes li {
+            padding: 8px 0;
+            color: #a0a090;
+        }
+        .includes li::before {
+            content: "✓";
+            color: #7c9a6d;
+            margin-right: 12px;
+        }
+        .guarantee {
+            margin-top: 48px;
+            padding: 32px;
+            background: rgba(124, 154, 109, 0.05);
+            border-radius: 8px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .guarantee h4 {
+            color: #c4b49a;
+            margin-bottom: 12px;
+        }
+        
+        /* Footer */
+        footer {
+            padding: 60px 0;
+            background: #0a150a;
+            text-align: center;
+            border-top: 1px solid rgba(124, 154, 109, 0.2);
+        }
+        footer p {
+            color: #7c9a6d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .details-grid { grid-template-columns: 1fr; }
+            .hero { padding: 80px 0 60px; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container nav-content">
+            <a href="/" class="logo-mark">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="8" stroke="currentColor" fill="none"/>
+                        <circle cx="12" cy="12" r="4" stroke="currentColor" fill="none" opacity="0.5"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-top">THE EXHALE</span>
+                    <span class="logo-bottom">RETREAT</span>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <p class="eyebrow">A Curated Wellness Journey</p>
+            <h1>You Don't Need to <span class="highlight">Fix</span> Your Life.<br>You Need Space to <span class="highlight">Breathe</span>.</h1>
+            <p class="hero-subheadline">A 6-day healing retreat for solo women travelers in the Texas Hill Country. Small groups. Real connection. No planning required.</p>
+            <div class="video-placeholder">[Video: Your VSL will go here]</div>
+            <a href="#offer" class="cta-button">Reserve Your Spot — $500 Deposit</a>
+        </div>
+    </section>
+
+    <section class="problem">
+        <div class="container">
+            <p class="section-label">The Problem</p>
+            <h2>You've been holding your breath for years.</h2>
+            <p style="color: #a0a090; max-width: 700px; font-size: 1.1rem;">Between career demands, family needs, and the endless to-do list, you've forgotten what it feels like to exhale. You crave travel, adventure, and connection—but the thought of planning it all feels overwhelming. And going alone? That feels scary.</p>
+            
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <h3>"I want to travel solo, but I'm afraid of feeling lonely."</h3>
+                    <p>You crave independence but don't want to eat dinner alone every night or navigate unfamiliar places by yourself.</p>
+                </div>
+                <div class="problem-card">
+                    <h3>"I need a break, but I don't have time to plan a retreat."</h3>
+                    <p>Researching venues, booking healers, coordinating logistics—it's another job you don't have time for.</p>
+                </div>
+                <div class="problem-card">
+                    <h3>"I'm in transition and I don't know who I am anymore."</h3>
+                    <p>Empty nest. Career change. Divorce. Recovery. You're in a new season but haven't had space to figure out what you want.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="solution">
+        <div class="container">
+            <p class="section-label">The Solution</p>
+            <h2>What if you could just show up?</h2>
+            <p class="solution-intro">The Exhale Retreat is a fully curated 6-day experience where everything is handled—from the moment you arrive to the moment you leave. You don't plan. You don't coordinate. You just exhale.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🌿</div>
+                    <h3>Small Groups, Real Connection</h3>
+                    <p>Maximum 12 women. No forced fun, no icebreakers—just organic connection with others who understand.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🏔️</div>
+                    <h3>Texas Hill Country Setting</h3>
+                    <p>Healing happens in nature. Rolling hills, clear springs, wide skies—space to breathe and remember who you are.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">✨</div>
+                    <h3>Guided Healing Experiences</h3>
+                    <p>Sound baths, meditation, gentle movement, and reflective practices—designed to help you return to yourself.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🍃</div>
+                    <h3>All-Inclusive Ease</h3>
+                    <p>Beautiful lodging, nourishing meals, ground transport, and curated excursions—everything handled.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="details">
+        <div class="container">
+            <div class="details-grid">
+                <div class="detail-block">
+                    <h3>What's Included</h3>
+                    <ul class="detail-list">
+                        <li>6 days / 5 nights boutique accommodation</li>
+                        <li>All meals (farm-to-table, dietary accommodations)</li>
+                        <li>Daily guided healing sessions</li>
+                        <li>Sound bath and meditation experiences</li>
+                        <li>Curated Hill Country excursions</li>
+                        <li>Ground transportation during retreat</li>
+                        <li>Welcome gift and materials</li>
+                        <li>Post-retreat integration guide</li>
+                    </ul>
+                </div>
+                <div class="detail-block">
+                    <h3>The Experience</h3>
+                    <ul class="detail-list">
+                        <li>Arrival & Welcome Dinner</li>
+                        <li>Day 2: Grounding & Intention Setting</li>
+                        <li>Day 3: Hill Country Exploration</li>
+                        <li>Day 4: Deep Rest & Reflection</li>
+                        <li>Day 5: Integration & Celebration</li>
+                        <li>Day 6: Closing Circle & Departure</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <p class="section-label">What Women Say</p>
+            <div class="testimonial">
+                <p class="testimonial-quote">"I arrived exhausted and overwhelmed. I left feeling like myself again—grounded, clear, and ready for what's next. The connections I made with the other women were unexpected and profound."</p>
+                <p class="testimonial-author">— Sarah M., 47, Austin</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="offer" id="offer">
+        <div class="container">
+            <p class="section-label">Your Investment</p>
+            <p class="price">$3,500</p>
+            <p class="price-note">$500 deposit reserves your spot. Balance due 30 days before retreat.</p>
+            
+            <div class="includes">
+                <h4>Everything Included:</h4>
+                <ul>
+                    <li>6 days / 5 nights accommodation</li>
+                    <li>All meals and non-alcoholic beverages</li>
+                    <li>All healing sessions and experiences</li>
+                    <li>Ground transportation during retreat</li>
+                    <li>Excursions and activities</li>
+                    <li>Pre-retreat preparation materials</li>
+                    <li>Post-retreat integration support</li>
+                </ul>
+            </div>
+            
+            <a href="#" class="cta-button">Reserve Your Spot — $500 Deposit</a>
+            
+            <div class="guarantee">
+                <h4>30-Day Peace of Mind Guarantee</h4>
+                <p>If you need to cancel up to 30 days before the retreat, your deposit is fully refundable. We want you to say yes from a place of excitement, not anxiety.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>A MOTA Experience | Minted Opulence Travel Advisors</p>
+            <p style="margin-top: 8px; font-size: 0.8rem;">New Braunfels, Texas</p>
+        </div>
+    </footer>
+</body>
+</html>
