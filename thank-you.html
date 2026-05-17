@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to The Exhale Retreat</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(180deg, #1a2f1a 0%, #0d1a0d 100%);
+            color: #f5f0e8;
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+        
+        .success-badge {
+            background: linear-gradient(135deg, #7c9a6d, #6b8a5d);
+            color: #fff;
+            padding: 16px 32px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin: 60px 0 40px;
+            font-size: 1.1rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 24px;
+            color: #fff;
+        }
+        
+        .intro {
+            font-size: 1.2rem;
+            color: #c4b49a;
+            margin-bottom: 48px;
+        }
+        
+        .next-steps {
+            background: rgba(124, 154, 109, 0.05);
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 48px;
+        }
+        
+        .next-steps h2 {
+            color: #7c9a6d;
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        
+        .step {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid rgba(124, 154, 109, 0.2);
+        }
+        
+        .step:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .step-number {
+            background: linear-gradient(135deg, #7c9a6d, #c4b49a);
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+        
+        .step h3 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+        
+        .step p {
+            color: #a0a090;
+            font-size: 0.95rem;
+        }
+        
+        .modules {
+            margin-bottom: 48px;
+        }
+        
+        .modules h2 {
+            color: #c4b49a;
+            font-size: 1.3rem;
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+        
+        .module-grid {
+            display: grid;
+            gap: 16px;
+        }
+        
+        .module-card {
+            background: rgba(124, 154, 109, 0.05);
+            border: 1px solid rgba(124, 154, 109, 0.2);
+            border-radius: 8px;
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .module-card h3 {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        
+        .module-card span {
+            color: #7c9a6d;
+            font-size: 0.85rem;
+        }
+        
+        .support {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid rgba(124, 154, 109, 0.2);
+        }
+        
+        .support p {
+            color: #a0a090;
+        }
+        
+        .support a {
+            color: #c4b49a;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-badge">
+            <span>✓</span>
+            <span>Purchase Confirmed</span>
+        </div>
+        
+        <h1>Welcome to The Exhale Retreat</h1>
+        <p class="intro">You've taken the first step toward finally exhaling. We're honored to guide you on this journey.</p>
+        
+        <div class="next-steps">
+            <h2>What Happens Next</h2>
+            
+            <div class="step">
+                <div class="step-number">1</div>
+                <div>
+                    <h3>Check Your Email</h3>
+                    <p>You'll receive a welcome email within the next 15 minutes with your retreat details and preparation guide.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <div>
+                    <h3>Complete Your Intake Form</h3>
+                    <p>Help us personalize your experience by sharing your dietary preferences, room preferences, and what you hope to gain from this retreat.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <div>
+                    <h3>Join Our Private Community</h3>
+                    <p>Connect with fellow retreat participants before we gather. Details in your welcome email.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modules">
+            <h2>Your Retreat Experience</h2>
+            <div class="module-grid">
+                <div class="module-card">
+                    <h3>Day 1: Arrival & Welcome</h3>
+                    <span>Details coming soon</span>
+                </div>
+                <div class="module-card">
+                    <h3>Day 2: Grounding & Intention</h3>
+                    <span>Details coming soon</span>
+                </div>
+                <div class="module-card">
+                    <h3>Day 3: Hill Country Exploration</h3>
+                    <span>Details coming soon</span>
+                </div>
+                <div class="module-card">
+                    <h3>Day 4: Deep Rest & Reflection</h3>
+                    <span>Details coming soon</span>
+                </div>
+                <div class="module-card">
+                    <h3>Day 5: Integration & Celebration</h3>
+                    <span>Details coming soon</span>
+                </div>
+                <div class="module-card">
+                    <h3>Day 6: Closing Circle & Departure</h3>
+                    <span>Details coming soon</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="support">
+            <p>Questions? Email us at <a href="mailto:retreats@mintedopulence.com">retreats@mintedopulence.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
